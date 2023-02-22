@@ -1,25 +1,61 @@
-import logo from './logo.svg';
 import './App.css';
+import ReactEcharts from "echarts-for-react"; 
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const option = {
+    series: [
+      {
+        type: 'gauge',
+        progress: {
+          show: true,
+          width: 18
+        },
+        axisLine: {
+          lineStyle: {
+            width: 18
+          }
+        },
+        axisTick: {
+          show: false
+        },
+        splitLine: {
+          length: 15,
+          lineStyle: {
+            width: 2,
+            color: '#999'
+          }
+        },
+        axisLabel: {
+          distance: 25,
+          color: '#999',
+          fontSize: 20
+        },
+        anchor: {
+          show: true,
+          showAbove: true,
+          size: 25,
+          itemStyle: {
+            borderWidth: 10
+          }
+        },
+        title: {
+          show: false
+        },
+        detail: {
+          valueAnimation: true,
+          fontSize: 80,
+          offsetCenter: [0, '70%']
+        },
+        data: [
+          {
+            value: 70
+          }
+        ]
+      }
+    ]
+  };
+  return <ReactEcharts option={option}   style={{height: '500px', width: '100%'}}  />;
 }
+
 
 export default App;
