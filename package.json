@@ -1,6 +1,13 @@
 {
   "name": "react-gauge-meter",
-  "version": "0.1.9",
+  "version": "0.2.0",
+  "description": "Gauge for React",
+  "author": "Kokim2020",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kokim2022/react-gauge-meter"
+  },
   "homepage": "https://kokim2022.github.io/react-gauge-meter",
   "private": false,
   "babel": {
@@ -19,7 +26,6 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "echarts": "^5.4.1",
     "echarts-for-react": "^3.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -56,11 +62,6 @@
   "devDependencies": {
     "@babel/cli": "^7.21.0",
     "@babel/preset-react": "^7.18.6",
-    "@rollup/plugin-commonjs": "^24.0.1",
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-typescript": "^11.0.0",
-    "gh-pages": "^5.0.0",
-    "rollup": "^3.17.2",
-    "rollup-plugin-dts": "^5.2.0"
+    "gh-pages": "^5.0.0"
   }
 }
