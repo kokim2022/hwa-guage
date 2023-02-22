@@ -1,7 +1,7 @@
 import ReactEcharts from "echarts-for-react"; 
 import { useState } from 'react';
 
-function ReactGuage({ firstColor, secondColor, thirdColor, value, style }) {
+function ReactGuageMeter({ firstColor, secondColor, thirdColor, value, style }) {
   const [option, setOption ] = useState({
     series: [
       {
@@ -60,4 +60,4 @@ function ReactGuage({ firstColor, secondColor, thirdColor, value, style }) {
 }
 
 
-export default ReactGuage;
+export default ReactGuageMeter;
