@@ -1,7 +1,7 @@
 {
-  "name": "demo",
+  "name": "react-gauge-meter",
   "version": "0.1.0",
-  "homepage": "https://kokim2022.github.io/hwa-guage",
+  "homepage": "https://kokim2022.github.io/react-gauge-meter",
   "private": false,
   "babel": {  
     "presets": [  
