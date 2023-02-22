@@ -1,50 +1,52 @@
 import './App.css';
 import ReactEcharts from "echarts-for-react"; 
+import { useEffect, useState } from 'react';
 
 function App() {
-  const option = {
+  const [option, setOption] = useState({
     series: [
       {
         type: 'gauge',
-        progress: {
-          show: true,
-          width: 18
-        },
         axisLine: {
           lineStyle: {
-            width: 18
+            width: 30,
+            color: [
+              [0.3, '#67e0e3'],
+              [0.7, '#37a2da'],
+              [1, '#fd666d']
+            ]
+          }
+        },
+        pointer: {
+          itemStyle: {
+            color: 'inherit'
           }
         },
         axisTick: {
-          show: false
+          distance: -30,
+          length: 8,
+          lineStyle: {
+            color: '#fff',
+            width: 2
+          }
         },
         splitLine: {
-          length: 15,
+          distance: -30,
+          length: 30,
           lineStyle: {
-            width: 2,
-            color: '#999'
+            color: '#fff',
+            width: 4
           }
         },
         axisLabel: {
-          distance: 25,
-          color: '#999',
+          color: 'inherit',
+          distance: 40,
           fontSize: 20
-        },
-        anchor: {
-          show: true,
-          showAbove: true,
-          size: 25,
-          itemStyle: {
-            borderWidth: 10
-          }
-        },
-        title: {
-          show: false
         },
         detail: {
           valueAnimation: true,
-          fontSize: 80,
-          offsetCenter: [0, '70%']
+          formatter: '{value} %',
+          color: 'inherit'
         },
         data: [
           {
@@ -53,8 +55,25 @@ function App() {
         ]
       }
     ]
-  };
-  return <ReactEcharts option={option}   style={{height: '500px', width: '100%'}}  />;
+  })
+  useEffect(() => {
+    const timer = setInterval(function () {
+      setOption({
+        series: [
+          {
+            data: [
+              {
+                value: +(Math.random() * 100).toFixed(2)
+              }
+            ]
+          }
+        ]
+      });
+    }, 2000);
+    return () => clearInterval(timer);
+  });
+
+  return <ReactEcharts option={option}   style={{height: '500px', width: '100%'}} id="myChart" />;
 }
 
 
