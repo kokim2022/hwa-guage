@@ -1,6 +1,6 @@
 {
   "name": "react-gauge-meter",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "homepage": "https://kokim2022.github.io/react-gauge-meter",
   "private": false,
   "babel": {
@@ -8,7 +8,7 @@
       "@babel/preset-react"
     ]
   },
-  "main": "react_guage_meter.js",
+  "main": "react_gauge_meter.js",
   "keywords": [
     "gauge",
     "react-gauge",
