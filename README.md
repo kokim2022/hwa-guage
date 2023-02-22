@@ -10,9 +10,9 @@ $ npm install react-gauge-meter
 For Demo, you can see: [https://kokim2022.github.io/react-gauge-meter/](https://kokim2022.github.io/react-gauge-meter/)
 
 ```ts
-import ReactGuageMeter from 'react-gauge-meter'; 
+import ReactGaugeMeter from 'react-gauge-meter'; 
 
-<ReactGuageMeter
+<ReactGaugeMeter
   firstColor="red"
   secondColor="green"
   thirdColor="blue"
