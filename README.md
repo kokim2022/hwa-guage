@@ -7,10 +7,10 @@ $ npm install react-gauge-meter
 
 ## Usage
 
-Code of a simple demo code showed below. For more example can see: [https://git.hust.cc/echarts-for-react/](https://git.hust.cc/echarts-for-react/)
+For Demo, you can see: [https://kokim2022.github.io/react-gauge-meter/](https://kokim2022.github.io/react-gauge-meter/)
 
 ```ts
-import ReactGuageMeter from 'react-gauge-meter';  // or var ReactECharts = require('echarts-for-react');
+import ReactGuageMeter from 'react-gauge-meter'; 
 
 <ReactGuageMeter
   firstColor="red"
