@@ -1,6 +1,6 @@
 import ReactEcharts from "echarts-for-react";
 import { useState } from 'react';
-function ReactGuage({
+function ReactGuageMeter({
   firstColor,
   secondColor,
   thirdColor,
@@ -57,4 +57,4 @@ function ReactGuage({
     style: style
   });
 }
-export default ReactGuage;
+export default ReactGuageMeter;
