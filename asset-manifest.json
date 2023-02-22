@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hwa-guage/static/css/main.073c9b0a.css",
-    "main.js": "/hwa-guage/static/js/main.798e83d3.js",
-    "static/js/787.f055211e.chunk.js": "/hwa-guage/static/js/787.f055211e.chunk.js",
-    "index.html": "/hwa-guage/index.html",
-    "main.073c9b0a.css.map": "/hwa-guage/static/css/main.073c9b0a.css.map",
-    "main.798e83d3.js.map": "/hwa-guage/static/js/main.798e83d3.js.map",
-    "787.f055211e.chunk.js.map": "/hwa-guage/static/js/787.f055211e.chunk.js.map"
+    "main.css": "/react-gauge-meter/static/css/main.073c9b0a.css",
+    "main.js": "/react-gauge-meter/static/js/main.51dee284.js",
+    "static/js/787.304b8a05.chunk.js": "/react-gauge-meter/static/js/787.304b8a05.chunk.js",
+    "index.html": "/react-gauge-meter/index.html",
+    "main.073c9b0a.css.map": "/react-gauge-meter/static/css/main.073c9b0a.css.map",
+    "main.51dee284.js.map": "/react-gauge-meter/static/js/main.51dee284.js.map",
+    "787.304b8a05.chunk.js.map": "/react-gauge-meter/static/js/787.304b8a05.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.798e83d3.js"
+    "static/js/main.51dee284.js"
   ]
 }
