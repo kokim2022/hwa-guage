@@ -4,15 +4,20 @@ function ReactGaugeMeter({
   firstColor,
   secondColor,
   thirdColor,
-  value: valueProp,
+  value,
   style
 }) {
-  const [value, setValue] = useState(valueProp);
   // handling value props
   useEffect(() => {
-    setValue(valueProp);
-  }, [valueProp]);
-  const [option] = useState({
+    setOption({
+      series: [{
+        data: [{
+          value: value
+        }]
+      }]
+    });
+  }, [value]);
+  const [option, setOption] = useState({
     series: [{
       type: 'gauge',
       axisLine: {

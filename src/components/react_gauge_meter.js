@@ -1,14 +1,23 @@
 import ReactEcharts from "echarts-for-react"; 
 import React, { useState, useEffect } from 'react';
 
-function ReactGaugeMeter({ firstColor, secondColor, thirdColor, value: valueProp, style }) {
-  const [value, setValue] = useState(valueProp)
+function ReactGaugeMeter({ firstColor, secondColor, thirdColor, value, style }) {
   // handling value props
   useEffect(() => {
-    setValue(valueProp)
-  }, [valueProp])
+    setOption({
+      series: [
+        {
+          data: [
+            {
+              value: value
+            }
+          ]
+        }
+      ]
+    })
+  }, [value])
 
-  const [option] = useState({
+  const [option, setOption] = useState({
     series: [
       {
         type: 'gauge',
