@@ -32,8 +32,6 @@ for example: #67e0e3 or red
 
 the `style` of echarts div. `object`, default is {height: '300px'}.
 
-## Live
-https://kokim2022.github.io/react-gauge-meter
 
 ## LICENSE
 
